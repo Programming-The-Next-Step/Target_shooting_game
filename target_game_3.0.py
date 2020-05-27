@@ -5,12 +5,6 @@ Created on Wed May 27 11:17:33 2020
 @author: Aly
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  3 21:59:27 2020
-
-@author: Aly
-"""
 from random import randint
 from math import sqrt
 
