@@ -8,6 +8,8 @@ and the value entered will be used when outputting the result of the experiment 
 
 SCREENSHOT: USER_ID 
 
+![user_ID](user_ID.png)
+
 ## The experiment
 
 The experiment is a game-like scenario that present the user with a target on a black screen. The goal is to 'shoot' at 
@@ -36,15 +38,7 @@ Please follow the code for further information:
 ## Userface:
 
 The game begins with a short explanation to the user about the purpose of the game. We have also introduced animated characters
-adapted from the /Strange Planet/ series to make the interface a bit more playful. Once the game starts, this user inteface can
-be enabled:
-
-``` python
-enable_intro = True
-
-if enable_intro:
-    show_intro(win)
-```
+adapted from the /Strange Planet/ series to make the interface a bit more playful. Once the game starts, this user inteface is automatically enabled.
 
 SCREENSHOT: PLAYER
 SCREENSHOT: TASK
