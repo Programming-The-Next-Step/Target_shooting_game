@@ -8,8 +8,8 @@ Download the code and start the 'setup.py' file, which will help you install the
 
 ## The experiment
 
-The experiment is a game-like scenario that present the user with a target on a black screen. The goal is to 'shoot' at 
-the target by using mouse presses. The target moves at a random position on the screen if the mouse is pressed or after a
+The experiment itself is a game-like scenario that present the user with a target on a black screen. The goal is to 'shoot' at 
+the target by using mouse presses (left click). The target moves at a random position on the screen if the mouse is pressed or after a
 certain amount of time. The player starts the game with 3 lives and looses a life for every incorrect 'shot' or when the
 time to shoot at the target is over. There are 3 levels to the game - each more difficult than the previous one. 
 The first level moves the target after 5 seconds (or after a mouse press), the second one - after 3 seconds, and the final 
@@ -19,15 +19,17 @@ ends either when the player wins the game, or when the player runs out of lives.
 shown an overview of their performance - 3 targets representing the 3 levels appear on the screen and yellow dots mark the
 correct shots that the user made. 
 
+The game at play looks like this at any given point. The user can track their progress by observing the 'Lives', 'Score' and 'Level' information at the top of the screen. This information updates with every click the user makes (or after the target moves to a new location on its own): 
+
 ![Play](Play.jpg)
 
+Once the game is finished, the user can see how they did on the overview per level:
 ![Overview](Overview.jpg)
 
 
 ## Measurements
 The experiment will be used to measure subjects' accuracy, reaction time and precision. The game stores a csv file that
-shows the user's performance. In this file are stored: the level of the game, coordinates of the target shot, reaction time,
-and whether the shot succesfully hit the target.
+shows the user's performance. In this file are stored: the level of the game, coordinates of where in the target the correct shots appeared, reaction time, and whether the shot succesfully hit the target. The resulting .csv file looks as shown bellow:
 
 ![CSV](CSV.jpg)
 
@@ -35,15 +37,21 @@ and whether the shot succesfully hit the target.
 ## Userface:
 
 The game begins with a short explanation to the user about the purpose of the game. We have also introduced animated characters
-adapted from the /Strange Planet/ series to make the interface a bit more playful. Once the game starts, this user inteface is automatically enabled.
+adapted from the **'Strange Planet'** series to make the interface a bit more playful. Once the game starts, this user inteface is automatically enabled. This feature can be disabled by the experimenter manually (see 'enable intro'). We allowed for this fun interface to grab the user's attention and to make the game a bit more exciting.
 
+Upon entering the user's ID, the following instructions would appear on the screen:
 ![Player](Player.jpg)
+
+The user will then be instructed in more detail on how to play the game:
 ![Task](Task.jpg)
 
 The game also ends with the same animated creatures depicted either in a victory or defeated state. This lets the participant know
 whether they have won or lost the game.
 
+For example, if the user scores 15 points, they will see the following immage (immediately followed by their **overview**)
 ![Won](Won.jpg)
+
+If they lost the game, they will be shown this result:
 ![Failed](Failed.jpg)
 
 
@@ -54,5 +62,4 @@ be displayed in the correct place and the same size regardless of the user's dis
 The main drawback of this approach is that the experiment may look smaller on very high resolution displays but even then it should
 be more than usable.
 
-This could be improved if used different units such as `norm` and `cm`. However, I didn't have enough
-time to add this. Given that the improvement this would add wasn't that much, it wasn't high priority.
+This could be improved if used different units such as `norm` and `cm`. However, implementing 'norm' proved difficult as then the program would resize to the different display size the player uses, thus making the game harder/easier depending on the display size. For that reason, the game was not adapted using this option. 
