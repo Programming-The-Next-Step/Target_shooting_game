@@ -38,8 +38,7 @@ The game begins with a short explanation to the user about the purpose of the ga
 adapted from the /Strange Planet/ series to make the interface a bit more playful. Once the game starts, this user inteface is automatically enabled.
 
 ![Player](Player.jpg)
-
-SCREENSHOT: TASK
+![Task](Task.jpg)
 
 The game also ends with the same animated creatures depicted either in a victory or defeated state. This lets the participant know
 whether they have won or lost the game.
