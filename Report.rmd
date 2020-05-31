@@ -8,7 +8,7 @@ and the value entered will be used when outputting the result of the experiment 
 
 SCREENSHOT: USER_ID 
 
-![user_ID](user_ID.png)
+![user_ID](user_ID.jpg)
 
 ## The experiment
 
